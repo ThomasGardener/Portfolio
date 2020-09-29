@@ -15,7 +15,7 @@
 
   setTimeout (function() {
   //Preloader
-  preloaderFadeOutTime = 1500;
+  preloaderFadeOutTime = 1200;
   function hidePreloader() {
   var preloader = $('.loader');
   preloader.fadeOut(preloaderFadeOutTime);
@@ -52,7 +52,7 @@ var $window = $(window);
 
      //check to see if this current container is within viewport
      if ((element_bottom_position >= window_top_position) &&
-         (element_top_position <= window_bottom_position)) {
+         (element_top_position + 200 <= window_bottom_position)) {
            if ($element.hasClass("left")) {
              $element.addClass('animate__fadeInLeft');
            }
@@ -75,4 +75,4 @@ var $window = $(window);
  $window.on('scroll resize', check_if_in_view);
  $window.trigger('scroll');
 
-}, 1500);
+}, 1200);
