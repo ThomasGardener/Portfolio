@@ -15,7 +15,7 @@
 
   setTimeout (function() {
   //Preloader
-  preloaderFadeOutTime = 1200;
+  preloaderFadeOutTime = 1100;
   function hidePreloader() {
   var preloader = $('.loader');
   preloader.fadeOut(preloaderFadeOutTime);
@@ -75,4 +75,4 @@ var $window = $(window);
  $window.on('scroll resize', check_if_in_view);
  $window.trigger('scroll');
 
-}, 1200);
+}, 1100);
